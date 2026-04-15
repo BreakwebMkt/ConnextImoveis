@@ -1,0 +1,6 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 120" role="img" aria-labelledby="title desc">
+  <title id="title">Logo Connext Imovel</title>
+  <desc id="desc">Logo com contorno arredondado na cor pessego e texto Connext Imovel ao centro.</desc>
+  <rect x="6" y="6" width="548" height="108" rx="54" ry="54" fill="none" stroke="#efad82" stroke-width="3"/>
+  <text x="280" y="75" text-anchor="middle" font-family="Montserrat, Arial, sans-serif" font-size="40" letter-spacing="9" fill="#363739">Connext Imovel</text>
+</svg>

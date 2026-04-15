@@ -1,0 +1,29 @@
+[
+  {
+    "id": "orulo-28097",
+    "zona": "Zona Leste",
+    "nome": "Parque Dialogo Padre Adelino Home",
+    "descricao": "Belem (Quarta Parada), 75 a 125 m2, 2 a 3 quartos, 1 a 3 suites e 1 a 2 vagas. Dialogo.",
+    "imagem": "./assets/imoveis/orulo-28097.jpg",
+    "alt": "Empreendimento Parque Dialogo Padre Adelino Home em Sao Paulo",
+    "whatsappTexto": "Tenho interesse no Parque Dialogo Padre Adelino Home (Codigo 28097)"
+  },
+  {
+    "id": "orulo-72220",
+    "zona": "Zona Leste",
+    "nome": "Alameda Tatuape Condominio Clube Home Spaces",
+    "descricao": "Vila Zilda, 26 a 64 m2, 1 a 2 quartos, 0 a 1 suite e 0 vagas. Dialogo.",
+    "imagem": "./assets/imoveis/orulo-72220.jpg",
+    "alt": "Empreendimento Alameda Tatuape Condominio Clube Home Spaces em Sao Paulo",
+    "whatsappTexto": "Tenho interesse no Alameda Tatuape Condominio Clube Home Spaces (Codigo 72220)"
+  },
+  {
+    "id": "orulo-63645",
+    "zona": "Zona Leste",
+    "nome": "The Grand Padre Adelino",
+    "descricao": "Belem, 74 a 155 m2, 2 a 4 quartos, 1 a 3 suites e 1 a 2 vagas. Dialogo.",
+    "imagem": "./assets/imoveis/orulo-63645.jpg",
+    "alt": "Empreendimento The Grand Padre Adelino em Sao Paulo",
+    "whatsappTexto": "Tenho interesse no The Grand Padre Adelino (Codigo 63645)"
+  }
+]

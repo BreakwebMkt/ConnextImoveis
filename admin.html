@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Connext Imoveis | Painel de Imoveis</title>
+  <meta name="robots" content="noindex,nofollow" />
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+  <link rel="apple-touch-icon" href="./assets/logo-connext.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=DM+Serif+Display&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./admin.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a href="./index.html" class="brand" aria-label="Connext Imoveis">
+        <img src="./assets/logo-connext.svg" alt="Logo Connext Imovel" />
+      </a>
+      <nav class="menu admin-menu-static">
+        <a href="./index.html">Ver Site</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="admin-main">
+    <section class="container admin-layout">
+      <div class="admin-card">
+        <h1>Painel de Imoveis</h1>
+        <p class="admin-note">
+          Adicione ou remova imoveis e depois clique em <strong>Baixar imoveis.json</strong>.
+          Em seguida, substitua o arquivo no painel da Hostinger.
+        </p>
+        <p class="admin-note">
+          Modo recomendado: coloque as imagens em <strong>assets/imoveis</strong> e informe o caminho, por exemplo:
+          <strong>./assets/imoveis/nome-do-arquivo.jpg</strong>
+        </p>
+
+        <form id="adminForm" class="admin-form">
+          <label>Nome do empreendimento
+            <input type="text" id="nome" required placeholder="Ex: Dialogo Art Mooca" />
+          </label>
+
+          <label>Zona
+            <select id="zona" required>
+              <option value="Zona Sul">Zona Sul</option>
+              <option value="Zona Leste">Zona Leste</option>
+            </select>
+          </label>
+
+          <label>Descricao curta
+            <textarea id="descricao" rows="3" required placeholder="Resumo para o card do imovel"></textarea>
+          </label>
+
+          <label>Caminho da imagem
+            <input type="text" id="imagem" required placeholder="./assets/imoveis/imovel-01.jpg" />
+          </label>
+          <img id="imagemPreview" class="imagem-preview" alt="Preview da imagem selecionada" />
+
+          <label>Texto WhatsApp (opcional)
+            <input type="text" id="whatsappTexto" placeholder="Se vazio, usamos: Tenho interesse no nome do imovel" />
+          </label>
+
+          <label>Texto alternativo da imagem - ALT (opcional)
+            <input type="text" id="alt" placeholder="Se vazio, geramos automaticamente" />
+          </label>
+
+          <button type="submit">Adicionar Imovel</button>
+        </form>
+
+        <div class="admin-actions">
+          <button type="button" id="saveLocalBtn" class="secondary">Salvar no navegador</button>
+          <button type="button" id="downloadBtn">Baixar imoveis.json</button>
+          <label class="upload-btn">
+            Importar JSON
+            <input type="file" id="uploadJson" accept="application/json" />
+          </label>
+        </div>
+
+        <p id="status" class="status"></p>
+      </div>
+
+      <div class="admin-card">
+        <h2>Imoveis Cadastrados</h2>
+        <div id="listaImoveis" class="admin-list"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="./admin.js"></script>
+</body>
+</html>
+
