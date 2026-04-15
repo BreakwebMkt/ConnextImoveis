@@ -16,7 +16,7 @@
 <body>
   <header class="topbar">
     <div class="container topbar-inner">
-      <a href="#inicio" class="brand" aria-label="Connext Imoveis">
+      <a href="./index.html" class="brand" aria-label="Connext Imoveis">
         <img src="./assets/logo-connext.svg" alt="Logo Connext Imovel" />
       </a>
       <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
@@ -26,7 +26,7 @@
       </button>
       <nav class="menu" id="menu">
         <a href="#quem-somos">Quem Somos</a>
-        <a href="#comprar">Comprar</a>
+        <a href="./comprar.html">Comprar</a>
         <a href="#cadastrar">Cadastrar</a>
         <a href="#contato">Entrar em Contato</a>
       </nav>
@@ -42,8 +42,8 @@
         </p>
         <button class="seo-close" id="seoClose" aria-label="Fechar aviso">X</button>
         <div class="zone-buttons" aria-label="Busca por zona">
-          <a href="#comprar" data-zone="Zona Sul">Zona Sul</a>
-          <a href="#comprar" data-zone="Zona Leste">Zona Leste</a>
+          <a href="./comprar.html?zona=Zona%20Sul" data-zone="Zona Sul">Zona Sul</a>
+          <a href="./comprar.html?zona=Zona%20Leste" data-zone="Zona Leste">Zona Leste</a>
         </div>
       </div>
     </section>
@@ -75,7 +75,7 @@
             </select>
           </label>
 
-          <button type="submit">Buscar Imoveis</button>
+          <button type="submit">Ver Empreendimentos</button>
         </form>
       </div>
     </section>
@@ -107,24 +107,9 @@
 
     <section class="listings" id="comprar">
       <div class="container">
-        <div class="results-toolbar">
-          <div class="results-left">
-            <p class="results-breadcrumb">Venda em Sao Paulo &gt; Residencial &gt; Apartamento</p>
-            <div class="results-chips">
-              <span class="chip-filter">Comprar</span>
-              <span class="chip-filter" id="chipZona">Todas as zonas</span>
-              <span class="chip-filter">Alto padrao</span>
-            </div>
-          </div>
-          <div class="results-right">
-            <button class="map-btn" type="button">Ver no mapa</button>
-            <button class="clear-btn" id="clearFiltersBtn" type="button">Limpar filtros</button>
-          </div>
-        </div>
-
         <h2>Imoveis em destaque</h2>
         <p class="section-subtitle" id="resultsSubtitle">
-          Empreendimentos da construtora Dialogo para teste de performance comercial.
+          Destaques selecionados. Para ver todos e filtrar, acesse a pagina Comprar.
         </p>
 
         <div class="cards" id="cardsContainer"></div>

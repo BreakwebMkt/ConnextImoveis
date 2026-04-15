@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Empreendimento | Connext Imoveis</title>
+  <meta name="description" content="Detalhes completos do empreendimento selecionado, com fotos, informacoes tecnicas e atendimento via WhatsApp." />
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+  <link rel="apple-touch-icon" href="./assets/logo-connext.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=DM+Serif+Display&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body class="detail-page">
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a href="./index.html" class="brand" aria-label="Connext Imoveis">
+        <img src="./assets/logo-connext.svg" alt="Logo Connext Imovel" />
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="menu" id="menu">
+        <a href="./index.html#quem-somos">Quem Somos</a>
+        <a href="./comprar.html">Comprar</a>
+        <a href="./index.html#cadastrar">Cadastrar</a>
+        <a href="./index.html#contato">Entrar em Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="detail-hero" id="detailHero"></section>
+
+    <section class="detail-content">
+      <div class="container detail-grid" id="detailGrid">
+        <p>Carregando empreendimento...</p>
+      </div>
+    </section>
+  </main>
+
+  <a class="whatsapp-float" target="_blank" rel="noopener" href="https://wa.me/5511999999999?text=Ola%2C%20quero%20atendimento%20sobre%20imoveis" aria-label="Falar no WhatsApp">
+    <img src="./assets/whatsapp-icon.svg" alt="WhatsApp" />
+  </a>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Connext Imoveis - Especialistas em imoveis de alto padrao em Sao Paulo.</p>
+    </div>
+  </footer>
+
+  <script src="./empreendimento.js"></script>
+</body>
+</html>

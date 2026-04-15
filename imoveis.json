@@ -1,28 +1,70 @@
-[
+﻿[
   {
     "id": "orulo-28097",
+    "codigo": "28097",
     "zona": "Zona Leste",
+    "bairro": "Belem (Quarta Parada)",
+    "cidade": "Sao Paulo",
     "nome": "Parque Dialogo Padre Adelino Home",
-    "descricao": "Belem (Quarta Parada), 75 a 125 m2, 2 a 3 quartos, 1 a 3 suites e 1 a 2 vagas. Dialogo.",
+    "construtora": "Dialogo",
+    "tipo": "Apartamento",
+    "metragem": "75 a 125 m2",
+    "quartos": "2 a 3",
+    "suites": "1 a 3",
+    "vagas": "1 a 2",
+    "descricao": "Empreendimento residencial com plantas inteligentes, excelente mobilidade e lazer completo para familias e investidores.",
     "imagem": "./assets/imoveis/orulo-28097.jpg",
+    "fotos": [
+      "./assets/imoveis/orulo-28097.jpg",
+      "./assets/imoveis/sao-paulo.jpg",
+      "./assets/imoveis/orulo-72220.jpg"
+    ],
     "alt": "Empreendimento Parque Dialogo Padre Adelino Home em Sao Paulo",
     "whatsappTexto": "Tenho interesse no Parque Dialogo Padre Adelino Home (Codigo 28097)"
   },
   {
     "id": "orulo-72220",
+    "codigo": "72220",
     "zona": "Zona Leste",
+    "bairro": "Vila Zilda",
+    "cidade": "Sao Paulo",
     "nome": "Alameda Tatuape Condominio Clube Home Spaces",
-    "descricao": "Vila Zilda, 26 a 64 m2, 1 a 2 quartos, 0 a 1 suite e 0 vagas. Dialogo.",
+    "construtora": "Dialogo",
+    "tipo": "Apartamento",
+    "metragem": "26 a 64 m2",
+    "quartos": "1 a 2",
+    "suites": "0 a 1",
+    "vagas": "0",
+    "descricao": "Projeto com foco em praticidade urbana, ideal para quem quer morar perto de servicos, transporte e comercio da regiao.",
     "imagem": "./assets/imoveis/orulo-72220.jpg",
+    "fotos": [
+      "./assets/imoveis/orulo-72220.jpg",
+      "./assets/imoveis/sao-paulo.jpg",
+      "./assets/imoveis/orulo-63645.jpg"
+    ],
     "alt": "Empreendimento Alameda Tatuape Condominio Clube Home Spaces em Sao Paulo",
     "whatsappTexto": "Tenho interesse no Alameda Tatuape Condominio Clube Home Spaces (Codigo 72220)"
   },
   {
     "id": "orulo-63645",
+    "codigo": "63645",
     "zona": "Zona Leste",
+    "bairro": "Belem",
+    "cidade": "Sao Paulo",
     "nome": "The Grand Padre Adelino",
-    "descricao": "Belem, 74 a 155 m2, 2 a 4 quartos, 1 a 3 suites e 1 a 2 vagas. Dialogo.",
+    "construtora": "Dialogo",
+    "tipo": "Apartamento",
+    "metragem": "74 a 155 m2",
+    "quartos": "2 a 4",
+    "suites": "1 a 3",
+    "vagas": "1 a 2",
+    "descricao": "Empreendimento de alto padrao com opcoes de plantas amplas, acabamento moderno e potencial de valorizacao.",
     "imagem": "./assets/imoveis/orulo-63645.jpg",
+    "fotos": [
+      "./assets/imoveis/orulo-63645.jpg",
+      "./assets/imoveis/sao-paulo.jpg",
+      "./assets/imoveis/orulo-28097.jpg"
+    ],
     "alt": "Empreendimento The Grand Padre Adelino em Sao Paulo",
     "whatsappTexto": "Tenho interesse no The Grand Padre Adelino (Codigo 63645)"
   }
