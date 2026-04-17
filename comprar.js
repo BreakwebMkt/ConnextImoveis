@@ -81,7 +81,7 @@ function criarCard(imovel) {
         <span>${imovel.quartos} quartos</span>
         <span>${imovel.vagas} vagas</span>
       </div>
-      <a class="cta" href="./empreendimento.html?id=${encodeURIComponent(imovel.id)}">Saiba Mais</a>
+      <a class="cta" href="./empreendimento.html?id=${encodeURIComponent(imovel.id)}">Ver detalhes</a>
     </div>
   `;
 

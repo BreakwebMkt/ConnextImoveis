@@ -53,8 +53,12 @@ function criarCard(imovel) {
     <div class="card-content">
       <span class="chip">${imovel.zona}</span>
       <h3>${imovel.nome}</h3>
-      <p>${imovel.bairro}, ${imovel.metragem}, ${imovel.quartos} quartos.</p>
-      <a class="cta" href="./empreendimento.html?id=${encodeURIComponent(imovel.id)}">Saiba Mais</a>
+      <div class="card-meta">
+        <p><strong>Bairro:</strong> ${imovel.bairro}</p>
+        <p><strong>Metragem:</strong> ${imovel.metragem}</p>
+        <p><strong>Quartos:</strong> ${imovel.quartos}</p>
+      </div>
+      <a class="cta" href="./empreendimento.html?id=${encodeURIComponent(imovel.id)}">Ver detalhes</a>
     </div>
   `;
 
