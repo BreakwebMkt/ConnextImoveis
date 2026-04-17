@@ -3,70 +3,70 @@
     "id": "orulo-28097",
     "codigo": "28097",
     "zona": "Zona Leste",
-    "bairro": "Belem (Quarta Parada)",
-    "cidade": "Sao Paulo",
-    "nome": "Parque Dialogo Padre Adelino Home",
-    "construtora": "Dialogo",
+    "bairro": "Belém (Quarta Parada)",
+    "cidade": "São Paulo",
+    "nome": "Parque Diálogo Padre Adelino Home",
+    "construtora": "Diálogo",
     "tipo": "Apartamento",
     "metragem": "75 a 125 m²",
     "quartos": "2 a 3",
     "suites": "1 a 3",
     "vagas": "1 a 2",
-    "descricao": "Empreendimento residencial com plantas inteligentes, excelente mobilidade e lazer completo para familias e investidores.",
+    "descricao": "Empreendimento residencial com plantas inteligentes, excelente mobilidade e lazer completo para famílias e investidores.",
     "imagem": "./assets/imoveis/orulo-28097.jpg",
     "fotos": [
       "./assets/imoveis/orulo-28097.jpg",
       "./assets/imoveis/sao-paulo.jpg",
       "./assets/imoveis/orulo-72220.jpg"
     ],
-    "alt": "Empreendimento Parque Dialogo Padre Adelino Home em Sao Paulo",
-    "whatsappTexto": "Tenho interesse no Parque Dialogo Padre Adelino Home (Codigo 28097)"
+    "alt": "Empreendimento Parque Diálogo Padre Adelino Home em São Paulo",
+    "whatsappTexto": "Tenho interesse no Parque Diálogo Padre Adelino Home (Código 28097)"
   },
   {
     "id": "orulo-72220",
     "codigo": "72220",
     "zona": "Zona Leste",
     "bairro": "Vila Zilda",
-    "cidade": "Sao Paulo",
-    "nome": "Alameda Tatuape Condominio Clube Home Spaces",
-    "construtora": "Dialogo",
+    "cidade": "São Paulo",
+    "nome": "Alameda Tatuapé Condomínio Clube Home Spaces",
+    "construtora": "Diálogo",
     "tipo": "Apartamento",
     "metragem": "26 a 64 m²",
     "quartos": "1 a 2",
     "suites": "0 a 1",
     "vagas": "0",
-    "descricao": "Projeto com foco em praticidade urbana, ideal para quem quer morar perto de servicos, transporte e comercio da regiao.",
+    "descricao": "Projeto com foco em praticidade urbana, ideal para quem quer morar perto de serviços, transporte e comércio da região.",
     "imagem": "./assets/imoveis/orulo-72220.jpg",
     "fotos": [
       "./assets/imoveis/orulo-72220.jpg",
       "./assets/imoveis/sao-paulo.jpg",
       "./assets/imoveis/orulo-63645.jpg"
     ],
-    "alt": "Empreendimento Alameda Tatuape Condominio Clube Home Spaces em Sao Paulo",
-    "whatsappTexto": "Tenho interesse no Alameda Tatuape Condominio Clube Home Spaces (Codigo 72220)"
+    "alt": "Empreendimento Alameda Tatuapé Condomínio Clube Home Spaces em São Paulo",
+    "whatsappTexto": "Tenho interesse no Alameda Tatuapé Condomínio Clube Home Spaces (Código 72220)"
   },
   {
     "id": "orulo-63645",
     "codigo": "63645",
     "zona": "Zona Leste",
-    "bairro": "Belem",
-    "cidade": "Sao Paulo",
+    "bairro": "Belém",
+    "cidade": "São Paulo",
     "nome": "The Grand Padre Adelino",
-    "construtora": "Dialogo",
+    "construtora": "Diálogo",
     "tipo": "Apartamento",
     "metragem": "74 a 155 m²",
     "quartos": "2 a 4",
     "suites": "1 a 3",
     "vagas": "1 a 2",
-    "descricao": "Empreendimento de alto padrao com opcoes de plantas amplas, acabamento moderno e potencial de valorizacao.",
+    "descricao": "Empreendimento de alto padrão com opções de plantas amplas, acabamento moderno e potencial de valorização.",
     "imagem": "./assets/imoveis/orulo-63645.jpg",
     "fotos": [
       "./assets/imoveis/orulo-63645.jpg",
       "./assets/imoveis/sao-paulo.jpg",
       "./assets/imoveis/orulo-28097.jpg"
     ],
-    "alt": "Empreendimento The Grand Padre Adelino em Sao Paulo",
-    "whatsappTexto": "Tenho interesse no The Grand Padre Adelino (Codigo 63645)"
+    "alt": "Empreendimento The Grand Padre Adelino em São Paulo",
+    "whatsappTexto": "Tenho interesse no The Grand Padre Adelino (Código 63645)"
   }
 ]
 

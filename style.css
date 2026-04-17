@@ -306,6 +306,29 @@ body.nav-open {
   padding: 84px 0;
 }
 
+/* Ajustes finos de respiro entre blocos da home */
+.about {
+  padding-bottom: 72px;
+}
+
+.listings {
+  padding-top: 72px;
+}
+
+/* Reduz o vão entre "Imóveis em destaque" e "Cadastre seu interesse" */
+.listings {
+  padding-bottom: 42px;
+}
+
+.register {
+  padding-top: 42px;
+  padding-bottom: 36px;
+}
+
+.contact {
+  padding-top: 40px;
+}
+
 .about {
   background: linear-gradient(180deg, #ececec, #f3f3f3);
 }

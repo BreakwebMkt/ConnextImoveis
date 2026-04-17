@@ -35,11 +35,11 @@ function toWhatsappLink(texto) {
 
 function renderNotFound() {
   detailHero.style.backgroundImage = 'url(./assets/imoveis/sao-paulo.jpg)';
-  detailGrid.innerHTML = '<p>Empreendimento nao encontrado.</p>';
+  detailGrid.innerHTML = '<p>Empreendimento não encontrado.</p>';
 }
 
 function renderEmpreendimento(item) {
-  document.title = `${item.nome} | Connext Imoveis`;
+  document.title = `${item.nome} | Connext Imóveis`;
   detailHero.style.backgroundImage = `linear-gradient(120deg, rgba(25,28,34,0.75), rgba(203,123,68,0.55)), url(${item.imagem})`;
 
   const fotos = item.fotos?.length ? item.fotos : [item.imagem];
@@ -50,11 +50,11 @@ function renderEmpreendimento(item) {
       <h1>${item.nome}</h1>
       <p>${item.descricao}</p>
       <div class="detail-specs">
-        <div><strong>Codigo</strong><span>${item.codigo}</span></div>
+        <div><strong>Código</strong><span>${item.codigo}</span></div>
         <div><strong>Bairro</strong><span>${item.bairro}</span></div>
         <div><strong>Metragem</strong><span>${item.metragem}</span></div>
         <div><strong>Quartos</strong><span>${item.quartos}</span></div>
-        <div><strong>Suites</strong><span>${item.suites}</span></div>
+        <div><strong>Suítes</strong><span>${item.suites}</span></div>
         <div><strong>Vagas</strong><span>${item.vagas}</span></div>
         <div><strong>Construtora</strong><span>${item.construtora}</span></div>
       </div>

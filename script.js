@@ -87,7 +87,7 @@ async function carregarDestaques() {
   } catch (error) {
     if (emptyResult) {
       emptyResult.hidden = false;
-      emptyResult.textContent = 'Nao foi possivel carregar os destaques no momento.';
+      emptyResult.textContent = 'Não foi possível carregar os destaques no momento.';
     }
     console.error(error);
   }
@@ -103,7 +103,7 @@ buscaRapida?.addEventListener('submit', (event) => {
 });
 
 cadastrarBtn?.addEventListener('click', () => {
-  const msg = 'Ola, quero cadastrar meu interesse em imoveis da Connext Imoveis.';
+  const msg = 'Olá, quero cadastrar meu interesse em imóveis da Connext Imóveis.';
   window.open(toWhatsappLink(msg), '_blank', 'noopener');
 });
 

@@ -72,7 +72,7 @@ function criarCard(imovel) {
     <div class="buy-card-body">
       <div class="buy-card-top">
         <span class="chip">${imovel.zona}</span>
-        <span class="mini-code">Cod. ${imovel.codigo}</span>
+        <span class="mini-code">Cód. ${imovel.codigo}</span>
       </div>
       <h3>${imovel.nome}</h3>
       <p class="buy-loc">${imovel.bairro}, ${imovel.cidade}</p>
@@ -135,6 +135,6 @@ async function init() {
 }
 
 init().catch((error) => {
-  buyCount.textContent = 'Nao foi possivel carregar os empreendimentos.';
+  buyCount.textContent = 'Não foi possível carregar os empreendimentos.';
   console.error(error);
 });
