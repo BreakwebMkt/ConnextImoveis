@@ -45,9 +45,17 @@ function toWhatsappLink(texto) {
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${text}`;
 }
 
+function formatarMetragem(texto = '') {
+  return String(texto).replace(/(\d+[.,]\d+)/g, (valor) => {
+    const numero = Number(valor.replace(',', '.'));
+    return Number.isFinite(numero) ? String(Math.floor(numero)) : valor;
+  });
+}
+
 function criarCard(imovel) {
   const article = document.createElement('article');
   article.className = 'card';
+  const metragem = formatarMetragem(imovel.metragem);
   article.innerHTML = `
     <img src="${imovel.imagem}" alt="${imovel.alt}" />
     <div class="card-content">
@@ -55,7 +63,7 @@ function criarCard(imovel) {
       <h3>${imovel.nome}</h3>
       <div class="card-meta">
         <p><strong>Bairro:</strong> ${imovel.bairro}</p>
-        <p><strong>Metragem:</strong> ${imovel.metragem}</p>
+        <p><strong>Metragem:</strong> ${metragem}</p>
         <p><strong>Quartos:</strong> ${imovel.quartos}</p>
       </div>
       <a class="cta" href="./empreendimento.html?id=${encodeURIComponent(imovel.id)}">Ver detalhes</a>
@@ -77,7 +85,9 @@ async function carregarDestaques() {
     }
 
     const imoveis = JSON.parse((await response.text()).replace(/^\uFEFF/, ''));
-    const destaques = imoveis.slice(0, 3);
+    const marcados = imoveis.filter((item) => item.destaque === true);
+    const fallback = imoveis.filter((item) => item.destaque !== true);
+    const destaques = [...marcados, ...fallback].slice(0, 3);
 
     cardsContainer.innerHTML = '';
     destaques.forEach((imovel) => cardsContainer.appendChild(criarCard(imovel)));

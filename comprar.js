@@ -47,6 +47,13 @@ function parseMinMetragem(texto) {
   return match ? Number(match[0]) : 0;
 }
 
+function formatarMetragem(texto = '') {
+  return String(texto).replace(/(\d+[.,]\d+)/g, (valor) => {
+    const numero = Number(valor.replace(',', '.'));
+    return Number.isFinite(numero) ? String(Math.floor(numero)) : valor;
+  });
+}
+
 function matchMetragem(filtro, valor) {
   const min = parseMinMetragem(valor);
 
@@ -65,6 +72,7 @@ function matchMetragem(filtro, valor) {
 function criarCard(imovel) {
   const el = document.createElement('article');
   el.className = 'buy-card';
+  const metragem = formatarMetragem(imovel.metragem);
   el.innerHTML = `
     <a class="buy-card-image" href="./empreendimento.html?id=${encodeURIComponent(imovel.id)}">
       <img src="${imovel.imagem}" alt="${imovel.alt}" />
@@ -77,9 +85,9 @@ function criarCard(imovel) {
       <h3>${imovel.nome}</h3>
       <p class="buy-loc">${imovel.bairro}, ${imovel.cidade}</p>
       <div class="buy-specs">
-        <span>${imovel.metragem}</span>
-        <span>${imovel.quartos} quartos</span>
-        <span>${imovel.vagas} vagas</span>
+        <span>${metragem}</span>
+        <span>${imovel.quartos}</span>
+        <span>${imovel.vagas}</span>
       </div>
       <a class="cta" href="./empreendimento.html?id=${encodeURIComponent(imovel.id)}">Ver detalhes</a>
     </div>
@@ -95,7 +103,7 @@ function aplicarFiltros() {
   const metragem = fMetragem.value;
 
   const lista = imoveis.filter((item) => {
-    const matchBusca = !busca || [item.nome, item.bairro, item.construtora].join(' ').toLowerCase().includes(busca);
+    const matchBusca = !busca || [item.nome, item.bairro, item.construtora, item.codigo].join(' ').toLowerCase().includes(busca);
     const matchZona = zona === 'Todas' || item.zona === zona;
     const minQuartos = parseMinQuartos(item.quartos);
     const matchQuartos = quartos === 'Todos' || minQuartos >= Number(quartos.replace('+', ''));
