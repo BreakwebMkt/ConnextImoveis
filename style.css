@@ -1144,7 +1144,7 @@ body.results-active .card-content p {
 }
 
 .detail-hero {
-  min-height: 180px;
+  min-height: 150px;
   display: grid;
   align-items: center;
   background: linear-gradient(120deg, #f2ece6 0%, #e8d7c9 55%, #f4efea 100%);
@@ -1152,7 +1152,7 @@ body.results-active .card-content p {
 }
 
 .detail-hero-content {
-  padding: 22px 0;
+  padding: 18px 0;
 }
 
 .detail-hero-content h1 {
@@ -1167,7 +1167,7 @@ body.results-active .card-content p {
 }
 
 .detail-content {
-  padding: 40px 0 80px;
+  padding: 24px 0 80px;
 }
 
 .detail-grid {
@@ -1231,19 +1231,30 @@ body.results-active .card-content p {
 .extra-info {
   margin-top: 18px;
   border-top: 1px solid #efdfd1;
-  padding-top: 14px;
+  padding-top: 16px;
+  background: #fbf6f1;
+  border-radius: 12px;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-bottom: 14px;
 }
 
 .orulo-link {
   display: inline-flex;
-  margin-top: 10px;
-  color: var(--primary);
+  margin-top: 12px;
+  color: #8f562f;
   font-weight: 700;
   text-decoration: none;
+  border: 1px solid #e1b38f;
+  background: #fff7f1;
+  border-radius: 10px;
+  padding: 10px 12px;
 }
 
 .orulo-link:hover {
-  color: var(--primary-2);
+  color: #fff;
+  background: var(--primary);
+  border-color: var(--primary);
 }
 
 .extra-info h3 {
