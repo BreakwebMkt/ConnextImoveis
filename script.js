@@ -5,6 +5,9 @@ const menu = document.getElementById('menu');
 const zonaSelect = document.getElementById('zonaSelect');
 const buscaRapida = document.getElementById('buscaRapida');
 const cadastrarBtn = document.getElementById('cadastrarBtn');
+const leadNome = document.getElementById('leadNome');
+const leadEmail = document.getElementById('leadEmail');
+const leadWhatsapp = document.getElementById('leadWhatsapp');
 const cardsContainer = document.getElementById('cardsContainer');
 const emptyResult = document.getElementById('emptyResult');
 const seoStrip = document.getElementById('seoStrip');
@@ -113,7 +116,20 @@ buscaRapida?.addEventListener('submit', (event) => {
 });
 
 cadastrarBtn?.addEventListener('click', () => {
-  const msg = 'Olá, quero cadastrar meu interesse em imóveis da Connext Imóveis.';
+  const nome = (leadNome?.value || '').trim();
+  const email = (leadEmail?.value || '').trim();
+  const whatsapp = (leadWhatsapp?.value || '').trim();
+
+  if (!nome || !email || !whatsapp) {
+    alert('Preencha nome, e-mail e WhatsApp para continuar.');
+    return;
+  }
+
+  const msg =
+    'Olá! Me chamo ' + nome + ' e quero receber ofertas de imóveis de alto padrão.\n' +
+    'Meu WhatsApp: ' + whatsapp + '\n' +
+    'Meu e-mail: ' + email;
+
   window.open(toWhatsappLink(msg), '_blank', 'noopener');
 });
 
@@ -139,3 +155,5 @@ function configurarSeoStrip() {
 
 configurarSeoStrip();
 carregarDestaques();
+
+
