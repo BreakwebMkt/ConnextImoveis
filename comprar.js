@@ -1,4 +1,4 @@
-ï»¿const WHATSAPP_NUMBER = '5511999999999';
+const WHATSAPP_NUMBER = '5511942682245';
 
 const menuToggle = document.getElementById('menuToggle');
 const menu = document.getElementById('menu');
@@ -80,7 +80,7 @@ function criarCard(imovel) {
     <div class="buy-card-body">
       <div class="buy-card-top">
         <span class="chip">${imovel.zona}</span>
-        <span class="mini-code">CÃ³d. ${imovel.codigo}</span>
+        <span class="mini-code">Cód. ${imovel.codigo}</span>
       </div>
       <h3>${imovel.nome}</h3>
       <p class="buy-loc">${imovel.bairro}, ${imovel.cidade}</p>
@@ -143,6 +143,6 @@ async function init() {
 }
 
 init().catch((error) => {
-  buyCount.textContent = 'NÃ£o foi possÃ­vel carregar os empreendimentos.';
+  buyCount.textContent = 'Não foi possível carregar os empreendimentos.';
   console.error(error);
 });

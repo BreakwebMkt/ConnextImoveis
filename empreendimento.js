@@ -1,4 +1,4 @@
-﻿const WHATSAPP_NUMBER = '5511999999999';
+const WHATSAPP_NUMBER = '5511942682245';
 
 const menuToggle = document.getElementById('menuToggle');
 const menu = document.getElementById('menu');
@@ -9,21 +9,21 @@ const THUMBS_PAGE = 6;
 
 function normalizeText(value = '') {
   return String(value)
-    .replace(/Ã¡/g, 'á')
-    .replace(/Ã /g, 'à')
-    .replace(/Ã¢/g, 'â')
-    .replace(/Ã£/g, 'ã')
-    .replace(/Ã©/g, 'é')
-    .replace(/Ãª/g, 'ê')
-    .replace(/Ã­/g, 'í')
-    .replace(/Ã³/g, 'ó')
-    .replace(/Ã´/g, 'ô')
-    .replace(/Ãµ/g, 'õ')
-    .replace(/Ãº/g, 'ú')
-    .replace(/Ã§/g, 'ç')
-    .replace(/Â²/g, '²')
-    .replace(/Â/g, '')
-    .replace(/�/g, '');
+    .replace(/á/g, '�')
+    .replace(/� /g, '�')
+    .replace(/â/g, '�')
+    .replace(/ã/g, '�')
+    .replace(/é/g, '�')
+    .replace(/ê/g, '�')
+    .replace(/í/g, '�')
+    .replace(/ó/g, '�')
+    .replace(/ô/g, '�')
+    .replace(/õ/g, '�')
+    .replace(/ú/g, '�')
+    .replace(/ç/g, '�')
+    .replace(/²/g, '�')
+    .replace(/�/g, '')
+    .replace(/?/g, '');
 }
 
 function formatarMetragem(texto = '') {
@@ -85,10 +85,10 @@ function ensureLightbox() {
     <div class="image-lightbox" id="imageLightbox" aria-hidden="true">
       <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
       <div class="lightbox-panel">
-        <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Fechar imagem">×</button>
-        <button type="button" class="lightbox-nav prev" id="lightboxPrev" aria-label="Imagem anterior">‹</button>
+        <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Fechar imagem">�</button>
+        <button type="button" class="lightbox-nav prev" id="lightboxPrev" aria-label="Imagem anterior">�</button>
         <img id="lightboxImage" alt="Imagem ampliada do empreendimento" />
-        <button type="button" class="lightbox-nav next" id="lightboxNext" aria-label="Próxima imagem">›</button>
+        <button type="button" class="lightbox-nav next" id="lightboxNext" aria-label="Pr�xima imagem">�</button>
       </div>
     </div>
   `;
@@ -158,7 +158,7 @@ function openLightbox(fotos, index) {
 
 function renderNotFound() {
   detailHero.innerHTML = '<div class="container detail-hero-content"><h1>Empreendimento</h1><p>Detalhes e galeria de imagens</p></div>';
-  detailGrid.innerHTML = '<p>Empreendimento não encontrado.</p>';
+  detailGrid.innerHTML = '<p>Empreendimento n�o encontrado.</p>';
 }
 
 function renderEmpreendimento(item) {
@@ -167,7 +167,7 @@ function renderEmpreendimento(item) {
   item.zona = normalizeText(item.zona);
   item.bairro = normalizeText(item.bairro);
   item.construtora = normalizeText(item.construtora);
-  item.metragem = formatarMetragem(normalizeText(item.metragem).replace(/m\^?2/g, 'm²'));
+  item.metragem = formatarMetragem(normalizeText(item.metragem).replace(/m\^?2/g, 'm�'));
   item.quartos = normalizeText(item.quartos);
   item.suites = normalizeText(item.suites);
   item.banheiros = normalizeText(item.banheiros || '');
@@ -175,7 +175,7 @@ function renderEmpreendimento(item) {
   item.endereco = normalizeText(item.endereco || '');
   item.alt = normalizeText(item.alt);
   item.whatsappTexto = normalizeText(item.whatsappTexto);
-  document.title = `${item.nome} | Connext Imóveis`;
+  document.title = `${item.nome} | Connext Im�veis`;
 
   const allImages = item.fotos?.length ? item.fotos : [item.imagem];
   const fotosPrincipais = allImages;
@@ -184,7 +184,7 @@ function renderEmpreendimento(item) {
     <div class="container detail-hero-content">
       <p class="results-breadcrumb">Comprar &gt; ${item.zona}</p>
       <h1>${item.nome}</h1>
-      <p>Veja fotos, plantas e informações completas do empreendimento.</p>
+      <p>Veja fotos, plantas e informa��es completas do empreendimento.</p>
     </div>
   `;
 
@@ -195,28 +195,28 @@ function renderEmpreendimento(item) {
       ${item.endereco ? `<p class="detail-address">${item.endereco}</p>` : ''}
       <p>${item.descricao}</p>
       <div class="detail-specs">
-        <div><strong>Código</strong><span>${item.codigo}</span></div>
+        <div><strong>C�digo</strong><span>${item.codigo}</span></div>
         <div><strong>Bairro</strong><span>${item.bairro}</span></div>
         <div><strong>Metragem</strong><span>${item.metragem}</span></div>
         <div><strong>Quartos</strong><span>${item.quartos}</span></div>
-        <div><strong>Suítes</strong><span>${item.suites}</span></div>
+        <div><strong>Su�tes</strong><span>${item.suites}</span></div>
         <div><strong>Banheiros</strong><span>${item.banheiros || 'A consultar'}</span></div>
         <div><strong>Vagas</strong><span>${item.vagas}</span></div>
         <div><strong>Construtora</strong><span>${item.construtora}</span></div>
       </div>
       <a class="contact-cta" target="_blank" rel="noopener" href="${toWhatsappLink(item.whatsappTexto)}">Quero atendimento deste empreendimento</a>
-      ${item.oruloUrl ? `<a class="orulo-link" target="_blank" rel="noopener" href="${item.oruloUrl}">Ver ficha técnica</a>` : ''}
+      ${item.oruloUrl ? `<a class="orulo-link" target="_blank" rel="noopener" href="${item.oruloUrl}">Ver ficha t�cnica</a>` : ''}
       ${item.outrasInformacoes ? `
       <section class="extra-info">
-        <h3>Outras informações</h3>
+        <h3>Outras informa��es</h3>
         <div class="extra-info-grid">
-          ${item.outrasInformacoes.estagio ? `<p><strong>Estágio:</strong> ${normalizeText(item.outrasInformacoes.estagio)}</p>` : ''}
+          ${item.outrasInformacoes.estagio ? `<p><strong>Est�gio:</strong> ${normalizeText(item.outrasInformacoes.estagio)}</p>` : ''}
           ${item.outrasInformacoes.estoque ? `<p><strong>Estoque:</strong> ${normalizeText(item.outrasInformacoes.estoque)}</p>` : ''}
-          ${item.outrasInformacoes.lancamento ? `<p><strong>Lançamento:</strong> ${normalizeText(item.outrasInformacoes.lancamento)}</p>` : ''}
+          ${item.outrasInformacoes.lancamento ? `<p><strong>Lan�amento:</strong> ${normalizeText(item.outrasInformacoes.lancamento)}</p>` : ''}
           ${item.outrasInformacoes.unidadesPorAndar ? `<p><strong>Unidades por andar:</strong> ${normalizeText(item.outrasInformacoes.unidadesPorAndar)}</p>` : ''}
           ${item.outrasInformacoes.entrega ? `<p><strong>Entrega:</strong> ${normalizeText(item.outrasInformacoes.entrega)}</p>` : ''}
           ${item.outrasInformacoes.totalUnidades ? `<p><strong>Total de unidades:</strong> ${normalizeText(item.outrasInformacoes.totalUnidades)}</p>` : ''}
-          ${item.outrasInformacoes.numeroAndares ? `<p><strong>Número de andares:</strong> ${normalizeText(item.outrasInformacoes.numeroAndares)}</p>` : ''}
+          ${item.outrasInformacoes.numeroAndares ? `<p><strong>N�mero de andares:</strong> ${normalizeText(item.outrasInformacoes.numeroAndares)}</p>` : ''}
           ${item.outrasInformacoes.atualizadoEm ? `<p><strong>Atualizado em:</strong> ${normalizeText(item.outrasInformacoes.atualizadoEm)}</p>` : ''}
         </div>
       </section>` : ''}
@@ -243,9 +243,9 @@ function renderEmpreendimento(item) {
       </div>
       ${fotosPrincipais.length > THUMBS_PAGE ? `
       <div class="thumb-nav">
-        <button class="thumb-nav-btn" id="thumbPrevBtn" type="button" aria-label="Fotos anteriores">‹</button>
+        <button class="thumb-nav-btn" id="thumbPrevBtn" type="button" aria-label="Fotos anteriores">�</button>
         <span>${fotosPrincipais.length} fotos</span>
-        <button class="thumb-nav-btn" id="thumbNextBtn" type="button" aria-label="Próximas fotos">›</button>
+        <button class="thumb-nav-btn" id="thumbNextBtn" type="button" aria-label="Pr�ximas fotos">�</button>
       </div>` : ''}
     </aside>
   `;

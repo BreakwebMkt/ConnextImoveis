@@ -1,4 +1,4 @@
-ï»¿const WHATSAPP_NUMBER = '5511999999999';
+const WHATSAPP_NUMBER = '5511942682245';
 
 const menuToggle = document.getElementById('menuToggle');
 const menu = document.getElementById('menu');
@@ -97,7 +97,7 @@ async function carregarDestaques() {
   } catch (error) {
     if (emptyResult) {
       emptyResult.hidden = false;
-      emptyResult.textContent = 'NÃ£o foi possÃ­vel carregar os destaques no momento.';
+      emptyResult.textContent = 'Não foi possível carregar os destaques no momento.';
     }
     console.error(error);
   }
@@ -113,7 +113,7 @@ buscaRapida?.addEventListener('submit', (event) => {
 });
 
 cadastrarBtn?.addEventListener('click', () => {
-  const msg = 'OlÃ¡, quero cadastrar meu interesse em imÃ³veis da Connext ImÃ³veis.';
+  const msg = 'Olá, quero cadastrar meu interesse em imóveis da Connext Imóveis.';
   window.open(toWhatsappLink(msg), '_blank', 'noopener');
 });
 

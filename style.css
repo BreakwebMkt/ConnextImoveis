@@ -982,6 +982,17 @@ body.results-active .card-content p {
     grid-template-columns: 1fr;
   }
 
+  /* Reforça a leitura dos nomes dos imóveis no mobile */
+  .card-content h3,
+  .buy-card h3 {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.92);
+    border-radius: 8px;
+    padding: 4px 8px;
+    line-height: 1.28;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  }
+
   body.results-active .cards {
     grid-template-columns: 1fr;
   }
