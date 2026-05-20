@@ -10,8 +10,6 @@ const leadEmail = document.getElementById('leadEmail');
 const leadWhatsapp = document.getElementById('leadWhatsapp');
 const cardsContainer = document.getElementById('cardsContainer');
 const emptyResult = document.getElementById('emptyResult');
-const seoStrip = document.getElementById('seoStrip');
-const seoClose = document.getElementById('seoClose');
 
 function setMenuState(open) {
   if (!menu || !menuToggle) {
@@ -137,23 +135,7 @@ document.querySelectorAll('.menu a').forEach((link) => {
   link.addEventListener('click', () => setMenuState(false));
 });
 
-function configurarSeoStrip() {
-  if (!seoStrip || !seoClose) {
-    return;
-  }
-
-  if (localStorage.getItem('connext_hide_seo_strip') === '1') {
-    seoStrip.style.display = 'none';
-    return;
-  }
-
-  seoClose.addEventListener('click', () => {
-    seoStrip.style.display = 'none';
-    localStorage.setItem('connext_hide_seo_strip', '1');
-  });
-}
-
-configurarSeoStrip();
 carregarDestaques();
+
 
 
